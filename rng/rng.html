@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RNG Game</title>
+    <link rel="stylesheet" href="rng-style.css">
+</head>
+<body>
+    <h1>RNG Game</h1>
+    <p>Click The Roll Button To Roll.</p>
+    <div id="ui">
+        <h1 id="coins-label">Coins: 0</h1>
+    </div>
+    <div id="game-area">
+        <div id="rarity-label">Rarity: Common</div>
+        <div id="rolls-label">Rolls: 0</div>
+        <div id="highest-label">Best: Common: 1/2</div>
+        <button id="roll-button" class="roll-button">Roll</button>
+        <button id="auto-roll-button" class="auto-roll-button">Auto: Off</button>
+        <button id="quick-roll-button" class="quick-roll-button">Quick: Off</button>
+        <button id="reset-button" class="reset-button">Reset Data</button>
+        <div id="roll-display" style="text-align: center; font-size: 40px; color: white;"></div>
+    </div>
+    <div id="admin-access">
+        <button id="access-admin" class="access-admin">Admin</button>
+    </div>
+    <div id="admin-panel">
+        <button id="view-auras-button">View All Auras</button>
+        <div id="aura-display"></div>
+    </div>
+    <div id="home-area">
+        <button id="to-home" class="home-button" onclick="window.location.href='../home/index.html';">Back to Home</button>
+    </div>
+    <script type="module" src="rng-script.js"></script>
+    <script type="module" src="rng-cutsceneCreator.js"></script>
+    <script type="module" src="rng-panel.js"></script>
+    <script type="module" src="rng-coins.js"></script>
+    <script type="module" src="rng-roll.js"></script>
+    <script type="module" src="rng-inventory.js"></script>
+</body>
+</html>
